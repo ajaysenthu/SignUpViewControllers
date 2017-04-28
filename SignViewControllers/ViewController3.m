@@ -18,6 +18,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    _experienceField.delegate = self;
+    _companyField.delegate = self;
+    _positionField.delegate = self;
+    _skillsField.delegate = self;
+    
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    [textField resignFirstResponder];
+    
+    return true;
 }
 
 

@@ -20,7 +20,19 @@
     // Do any additional setup after loading the view.
     
 
-    _sampleLabel.text = [_personalArray objectAtIndex:0];
+    _majorField.delegate = self;
+    _universityField.delegate = self;
+    _cgpaField.delegate = self;
+    _projectsField.delegate = self;
+}
+
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    
+    [textField resignFirstResponder];
+    
+    return true;
 }
 
 

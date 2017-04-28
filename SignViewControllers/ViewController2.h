@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController2 : UIViewController
+@interface ViewController2 : UIViewController<UITextFieldDelegate>
 
 
 @property NSMutableArray *personalArray;
@@ -23,6 +23,5 @@
 
 
 
-@property (weak, nonatomic) IBOutlet UILabel *sampleLabel;
 
 @end
